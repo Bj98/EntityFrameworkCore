@@ -1,0 +1,8 @@
+﻿@model EntityFrameworkCore.Models.StudentModel.Student
+
+<form method="Post">
+    <input asp-for="StudentId" type="text" hidden /><br />
+    Name:<input asp-for="Name" type="text" />
+    Class:<input asp-for="Class" type="text" />
+    <input type="submit" value="submit" />
+</form>

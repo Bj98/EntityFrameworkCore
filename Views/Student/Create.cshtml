@@ -1,0 +1,9 @@
+﻿@model EntityFrameworkCore.Models.StudentModel.Student
+
+<form method="post">
+    <div asp-validation-summary="All"></div><br/>
+    Name:<input asp-for="Name" type="text"/><br/>
+    Class:<input asp-for="Class" type="text" /><br/>
+    <input type="submit" value="submit"/>
+
+</form>

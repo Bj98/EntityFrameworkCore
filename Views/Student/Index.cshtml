@@ -1,0 +1,18 @@
+﻿@model List<EntityFrameworkCore.Models.StudentModel.Student>
+
+<a asp-action="Create" asp-controller="Student" class="btn btn-primary">Create User</a><br/>
+
+@if (Model.Count < 1)
+{
+    <p>No data found</p>
+}
+else{
+    @foreach(var Student in Model)
+    {
+        @Student.Name<br/>
+        @Student.Class<br/>
+        <a asp-action="Edit" asp-route-id="@Student.StudentId" class="btn btn-primary">Edit</a><br/>
+        <a asp-action="Delete" asp-route-id="@Student.StudentId" class="btn btn-primary">Delete</a><br/>
+    }
+}
+
